@@ -16,7 +16,7 @@ The goals of this project are the following:
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I used Gaussian smoothing and Canny Edge Detection. After that, suitable region was masked and lines were detected by Hough Tranform.
 
-In order to draw a single line on the left and right lanes, I used Linear Regression by Python numpy + polyfit.
+In order to draw a single line on the left and right lanes, I averaged directional coefficients and center of lines detected by Hough Transform.
 
 
 ### 2. Potential shortcomings
